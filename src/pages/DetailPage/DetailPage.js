@@ -13,7 +13,7 @@ const DetailPage = () => {
   console.log(char);
 
   useEffect(() => {
-    axios(`https://fakestoreapi.com/products${id}`).then((json) =>
+    axios(`https://fakestoreapi.com/products/${id}`).then((json) =>
       setChar(json.data)
     );
   }, [id]);
